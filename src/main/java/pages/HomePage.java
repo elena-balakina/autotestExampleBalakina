@@ -30,6 +30,11 @@ public class HomePage {
         return new LargeAndDeepDomPage(driver);
     }
 
+    public InfiniteScrollPage clickInfiniteScroll(){
+        clickLink("Infinite Scroll");
+        return new InfiniteScrollPage(driver);
+    }
+
     public FileUploadPage clickFileUpload() {
         clickLink("File Upload");
         return new FileUploadPage(driver);
